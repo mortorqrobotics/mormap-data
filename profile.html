@@ -5,7 +5,7 @@
   	<meta charset="utf-8" />
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>MorScout - Profile</title>
+    <title>MorMap - Team Profile</title>
   	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400' rel='stylesheet' type='text/css'>
   	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   	<link href='http://fonts.googleapis.com/css?family=Exo+2:400,300,200' rel='stylesheet' type='text/css'>
@@ -15,10 +15,7 @@
     <link href="../jbox/jBox.css" rel="stylesheet">
     <link href="../jbox/themes/TooltipDark.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css" type="text/css">
-    <link rel="stylesheet" href="css/profile.css" type="text/css">
-    <link rel="stylesheet" href="css/login.css" type="text/css">
+    <link rel="stylesheet" href="profile.css" type="text/css"/>
 
 
   </head>
@@ -36,7 +33,6 @@
             </div>
             <div class="collapse navbar-collapse" id="MorMapNav">
                 <ul class="nav navbar-nav">
-                    <li><a href="matches.html" title="List of all matches">All Matches</a></li>
                     <li><a href="teams.html" title="List of all teams">Team List</a></li>
                     <li><a href="settings.html" title="Configure the settings">Settings</a></li>
                 </ul>
@@ -61,11 +57,12 @@
 
 
     <div class="left-bar">
-      <h1 id="team-name"></h1>
+      <h1 id="team-name">Profile</h1>
       <img class="team-pic" src="http://www.allegraabbotsford.com/wp-content/uploads/2015/06/generic-profile.png"/>
-      <h3 id="team-label"></h3>
+
       <h3>[Team Name]</h3>
       <h3>[Team Number]</h3>
+
       <input type="button" class="button left-button" id="left-bar-button" value="Edit Team Profile"></input>
       <input type="button" class="button left-button" id="left-bar-button" value="Change Password"></input>
 
@@ -77,11 +74,11 @@
         <div class="subdivisions">
           <h1 class="scout-div-title profile-div-title">Subdivisions</h1>
           <h3 class="subdivision-programming">Programming</h3>
-            <li class="link">Link</li>
+            <h5 class="link">Link</h5>
           <h3 class="subdivision-build">Build...Needs mental help</h3>
-            <li class="link">Link</li>
+            <h5 class="link">Link</h5>
           <h3 class="subdivision-business">Business...Doesn't do any work</h3>
-            <li class="link">Link</li>
+            <h5 class="link">Link</h5>
           <ul id="task-list">
             <!-- <li class="profile-orange profile-li-font">From Match 1 to 10, Red Alliance, Team 2</li> -->
           </ul>
@@ -93,9 +90,10 @@
           <h1 class="scout-div-title profile-div-title">Statistics</h1>
           <ul>
             <h3 class="orange profile-li-font">Competitions Participated In: <span id="matches-scouted-label"></span></h3>
-              <li class="list">List</li>
+              <li class="list"><h5>list</h5></li>
             <h3 class="orange profile-li-font">Awards: <span id="pits-scouted-label"></span></h3>
-              <li class="list">List</li>
+              <li class="list"><h5>list</h5></li>
+            </ul>
           </div>
         </div>
 

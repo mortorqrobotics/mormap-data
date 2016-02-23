@@ -12,10 +12,13 @@
 	float: center !important;
 }
 
+
 #team-name {
 	padding-top: 2em;
 	font-size: 3em;
 }
+
+
 
 .team-pic{
 	margin: 2.4em 5.4em 0em 5.4em;
@@ -102,6 +105,7 @@
 	background-color: #c0c0c0;
 	color: black;
 	padding: 0.2em;
+	text-align: center;
 }
 
 #assign-task-box::-webkit-input-placeholder {
@@ -127,6 +131,7 @@
 	font-size: 1.7em;
 	margin-top: 1em;
 	width: 5em;
+
 }
 
 .task-heading {
@@ -142,6 +147,7 @@
 
 #task-second-word {
 	margin-left: 0.5em;
+
 }
 
 .task-dropdown {
@@ -149,6 +155,7 @@
     font-size: 1.5em;
     background-color: orange;
     margin: 0px 7px 7px 1em;
+
 }
 
 .profile-div-title {

@@ -105,7 +105,7 @@
 	background-color: #c0c0c0;
 	color: black;
 	padding: 0.2em;
-	text-align: center;
+
 }
 
 #assign-task-box::-webkit-input-placeholder {
@@ -147,7 +147,7 @@
 
 #task-second-word {
 	margin-left: 0.5em;
-
+	margin-right: 0.5em;
 }
 
 .task-dropdown {
@@ -173,14 +173,23 @@
 }
 
 #task-assign-heading {
-	margin-left: 15em;
+	margin-left: 12em;
 }
 
 .profile-li-font {
-	font-size: 1.5em !important;
+	font-size: 2.5em !important;
 	list-style-type: circle;
 }
 
 .profile-li-font:before {
 	color:orange;
+}
+
+.Alliance-Dropdown{
+	margin-left: 20em;
+}
+
+.centerer{
+	margin-left: 24em;
+	color: orange;
 }

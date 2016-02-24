@@ -72,52 +72,44 @@
     </div>
 
     <div class="row">
+      <div class="col-md-11">
 
-      <div class="col-md-6">
-        <div class="subdivisions">
-          <h1 class="scout-div-title profile-div-title">Subdivisions</h1>
-          <h3 class="subdivision-programming orange">Programming</h3>
-            <h5 class="link orange">Link</h5>
-          <h3 class="subdivision-build orange">Build...Needs mental help</h3>
-            <h5 class="link orange">Link</h5>
-          <h3 class="subdivision-business orange">Business...Doesn't do any work</h3>
-            <h5 class="link orange">Link</h5>
-          <ul id="task-list">
-            <!-- <li class="profile-orange profile-li-font">From Match 1 to 10, Red Alliance, Team 2</li> -->
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-6">
         <div class="stats">
-          <h1 class="scout-div-title profile-div-title">Statistics</h1>
+          <h1 class="scout-div-title profile-div-title black">Statistics</h1>
           <ul>
-            <h2 class="orange profile-li-font">Competitions Participated In: <span id="matches-scouted-label"></span></h2>
-              <li class="list orange"><h5>list</h5></li>
-            <h3 class="orange profile-li-font">Awards: <span id="pits-scouted-label"></span></h3>
-              <li class="list orange"><h5>list</h5></li>
+            <h2 class="black profile-li-font">Competitions Participated In: <span id="matches-scouted-label"></span></h2>
+              <li class="list black"><h5>list</h5></li>
+            <h3 class="black profile-li-font">Awards: <span id="pits-scouted-label"></span></h3>
+              <li class="list black"><h5>list</h5></li>
             </ul>
           </div>
         </div>
+      </div>
 
-    </div>
+        <div class="team-information">
+          <h1 class="scout-div-title profile-div-title black" id="task-assign-heading">Team Information</h1>
+          <div class="assign-task-div">
+            <h1 class="page-title task-heading task-inline" id="first-word">Contacts</h1>
+            <ul>
+              <li class="email centerer">[Email]</li>
+              <li class="phone-number centerer">[Phone-Number]</li>
+              <li class="website-link centerer">[Website-Link]</li>
+            </ul>
 
-    <div class="team-information">
-      <h1 class="scout-div-title profile-div-title" id="task-assign-heading">Team Information</h1>
-      <div class="assign-task-div">
-        <h3 class="page-title task-heading task-inline" id="first-word">Contacts</h3>
-        <ul>
-          <li class="email centerer">[Email]</li>
-          <li class="phone-number centerer">[Phone-Number]</li>
-          <li class="website-link centerer">[Website-Link]</li>
-        </ul>
-          <div class="Alliance-Dropdown">
-            <h3 class="page-title task-heading task-inline" id="task-second-word">Alliance</h3>
-            <select id="alliance-drop" class="task-inline creator-dropdown task-dropdown">
-              <option value="red">Red Alliance</option>
-              <option value="blue">Blue Alliance</option>
-            </select>
-          </div>
+        </div>
+        <div class="stats">
+          <h3 class="page-title task-heading task-inline" id="task-second-word">Alliance</h3>
+          <select id="alliance-drop" class="task-inline creator-dropdown task-dropdown">
+            <option value="red">Red Alliance</option>
+            <option value="blue">Blue Alliance</option>
+          </select>
+        </div>
+      </div>
+      </div>
+
+
+
+
 
     <script src="js/main.js" type="text/javascript"></script>
 
@@ -151,23 +143,7 @@
             loadTasks();
         });
     });
-    function loadTasks(){
-        var taskList = $("#task-list");
-        taskList.empty();
-        $.post("/showTasks", {scoutID: userID}, function(response){
-            var tasks = JSON.parse(response);
-            for (var i = 0; i < tasks.assignments.length; i++){
-                var task = tasks.assignments[i];
-                var li = $(document.createElement("li"));
-                li.addClass("profile-orange profile-li-font");
-                li.html("From match " + task.startMatch + " to " + task.endMatch + ", " + task.alliance.substring(0, 1).toUpperCase() + task.alliance.substring(1) + " Alliance, Team " + task.teamSection)
-                taskList.append(li);
-            }
-            $("#complete-matches-label").html(tasks.matchesDone.join(", "));
-            $("#not-complete-matches-label").html(tasks.matchesNotDone.join(", "));
-            $("#completion-label").html(tasks.matchesDone.length + "/" + (tasks.matchesDone.length + tasks.matchesNotDone.length));
-        });
-    }
+
     </script>
 
 

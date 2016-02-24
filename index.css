@@ -62,7 +62,7 @@ h2{
 #teamcode-create{
 	height:2.2em;
 	width: 11.15em;
-	text-align: center;
+	text-align: center; 
 	font-size: 2.2em;
 }
 
@@ -71,7 +71,7 @@ html{
 }
 
 body {
-    background: #000000; /* background color */
+    background: #E0E0E0; /* background color */
 	font-size: 100%; /* makes default px size of elements equal to 1em (not to be changed) */
 }
 

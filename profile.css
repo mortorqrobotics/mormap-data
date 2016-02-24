@@ -28,7 +28,7 @@
 	object-fit: cover;
 }
 
-.subdivisions {
+.stats {
 	width: auto;
 	text-align: center;
 	margin-left: 40em;
@@ -42,29 +42,6 @@
 
 }
 
-.subdivisions li {
-	font-size: 28px;
-}
-
-.stats {
-	width: auto;
-	text-align: center;
-	margin-left: 0em;
-	margin-right:10em;
-	/*margin-right: 5px;*/
-	margin-top: 7em;
-	height: auto;
-	box-shadow: 0 2px 8px -5px;
-	position: relative;
-	padding-top: 1em;
-	padding-bottom: 1em;
-}
-
-.stats li {
-	font-size: 28px;
-	list-style-type: none;
-}
-
 #tasks {
 	padding-top: 5em;
 }
@@ -76,7 +53,7 @@
 	margin-bottom: 1em;
 	margin-top: 0.5em;
 	border-radius: .2em;
-	background-color: #EE7600;
+	background-color: #FF9933;
 	color: black;
 	font-family: 'Exo 2', sans-serif;
 	padding-top: 0.1em;
@@ -169,7 +146,8 @@
 }
 
 #first-word{
-	margin-left: 12em;
+	margin-left: 8em;
+	font-size: 3em;
 }
 
 #task-assign-heading {
@@ -179,10 +157,11 @@
 .profile-li-font {
 	font-size: 2.5em !important;
 	list-style-type: circle;
+
 }
 
 .profile-li-font:before {
-	color:orange;
+	color: orange;
 }
 
 .Alliance-Dropdown{
@@ -190,6 +169,7 @@
 }
 
 .centerer{
-	margin-left: 24em;
-	color: orange;
+	margin-left: 16em;
+	color: black;
+	font-size: 1.5em;
 }

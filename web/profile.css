@@ -1,9 +1,10 @@
 .left-bar{
-	background-color: orange;
+	background-color: #FFC547;
 	width: 30em;
 	height: calc(100% - 3em);
 	position: fixed;
-	top:4em;
+	top: 5em;
+	text-align: center;
 	overflow-y: auto;
 	box-shadow: 1px 4px 6px #ababab;
 	z-index: 87;
@@ -13,10 +14,13 @@
 }
 
 
-#team-name {
-	padding-top: 2em;
+
+/*#team-name {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: orange;
 	font-size: 3em;
-}
+}*/
 
 
 
@@ -26,6 +30,7 @@
 	height: 15em;
 	border: 1px solid gray;
 	object-fit: cover;
+	margin-top: 10em;
 }
 
 .stats {
@@ -53,7 +58,7 @@
 	margin-bottom: 1em;
 	margin-top: 0.5em;
 	border-radius: .2em;
-	background-color: #FF9933;
+	background-color: #ffb524;
 	color: black;
 	font-family: 'Exo 2', sans-serif;
 	padding-top: 0.1em;
@@ -101,6 +106,7 @@
 
 .team-information {
 	text-align: center;
+	margin-left: 4em;
 }
 
 .task-tbox {
@@ -123,8 +129,7 @@
 }
 
 #task-second-word {
-	margin-left: 0.5em;
-	margin-right: 0.5em;
+	margin-left: -6em;
 }
 
 .task-dropdown {
@@ -148,6 +153,7 @@
 #first-word{
 	margin-left: 8em;
 	font-size: 3em;
+	margin-top: 0.7em !important;
 }
 
 #task-assign-heading {
@@ -169,7 +175,22 @@
 }
 
 .centerer{
-	margin-left: 16em;
+	margin-left: 50em;
 	color: black;
 	font-size: 1.5em;
+}
+
+.email {
+	text-align: center;
+	margin-right: 34em;
+}
+
+.phone-number {
+	text-align: center;
+	margin-right: 34em;
+}
+
+.website-link {
+	text-align: center;
+	margin-right: 34em;
 }

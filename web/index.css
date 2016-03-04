@@ -62,7 +62,7 @@ h2{
 #teamcode-create{
 	height:2.2em;
 	width: 11.15em;
-	text-align: center; 
+	text-align: center;
 	font-size: 2.2em;
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 .navbar-default .container-fluid {
-  background-color: orange; /* color of nav bar */
+  background-color: #FFC547; /* color of nav bar */
   font-family: 'Open Sans', sans-serif; /* font of nav bar links */
   width: 100%; /* width of nav bar (not to be changed) */
 }
@@ -96,7 +96,7 @@ body {
 }
 
 .navbar-default a {
-  font-size: 1.3em; /* user profile dropdown menu font size */
+  font-size: 1.1em; /* user profile dropdown menu font size */
   font-weight: bold; /* user profile dropdown menu font weight */
 }
 
@@ -110,7 +110,7 @@ body {
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 color: black; /* color of text of selected link in nav bar */
-background-color: #EE7600; /* color of background of selected link in nav bar */
+background-color: #FFC547; /* color of background of selected link in nav bar */
 }
 
 .navbar-default div.navbar-collapse {

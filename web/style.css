@@ -31,7 +31,7 @@ li {
 	z-index: -1;
 }
 .leftbar {
-    background-color: #FFC547;
+    background-color: #ffc547;
     width: 260px;
     height: calc(100% - 30px);
     position: fixed;
@@ -42,7 +42,7 @@ li {
     -webkit-overflow-scrolling: touch;
 }
 .icon-menu {
-  color: #fff;
+  color: #FF9933;
   cursor: wait;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -52,4 +52,8 @@ li {
   text-decoration: none;
   text-transform: uppercase;
 	z-index: 5;
+}
+
+.div leftbar {
+	background-color: #FF9933;
 }

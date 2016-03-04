@@ -58,7 +58,7 @@ hr{
 	font-size: 2em;
 	background-color: orange;
 	margin-top:.0em;
-}s
+}
 
 .check {
 
@@ -151,5 +151,5 @@ input:focus {
 }
 
 #login-button:hover{
-	background-color:
+
 }

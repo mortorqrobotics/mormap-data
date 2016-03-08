@@ -71,7 +71,7 @@ html{
 }
 
 body {
-    background: #E0E0E0; /* background color */
+    background: #eee9e9; /* background color */
 	font-size: 100%; /* makes default px size of elements equal to 1em (not to be changed) */
 }
 

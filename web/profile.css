@@ -1,3 +1,5 @@
+
+
 .left-bar{
 	background-color: #FFC547;
 	width: 30em;
@@ -15,17 +17,18 @@
 
 
 
-/*#team-name {
+#team-name {
 	padding-top: 1em;
 	padding-bottom: 1em;
 	background-color: orange;
-	font-size: 3em;
-}*/
+	font-size: 2.5em;
+}
 
 
 
 .team-pic{
-	margin: 2.4em 5.4em 0em 5.4em;
+	margin: 2.4em 5.4em 2em 5.4em;
+
 	width: 15em;
 	height: 15em;
 	border: 1px solid gray;
@@ -34,7 +37,7 @@
 }
 
 .stats {
-	width: auto;
+	width: 350px;
 	text-align: center;
 	margin-left: 40em;
 	/*margin-right: 5px;*/
@@ -44,7 +47,21 @@
 	position: relative;
 	padding-top: 1em;
 	padding-bottom: 1em;
+	background-color: #E0E0E0;
 
+}
+.info {
+	width: 350px;
+	text-align: center;
+	margin-left: 30em;
+	/*margin-right: 5px;*/
+	margin-top: 7em;
+	height: auto;
+	box-shadow: 0 2px 8px -5px;
+	position: relative;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: #E0E0E0;
 }
 
 #tasks {
@@ -178,19 +195,4 @@
 	margin-left: 50em;
 	color: black;
 	font-size: 1.5em;
-}
-
-.email {
-	text-align: center;
-	margin-right: 34em;
-}
-
-.phone-number {
-	text-align: center;
-	margin-right: 34em;
-}
-
-.website-link {
-	text-align: center;
-	margin-right: 34em;
 }

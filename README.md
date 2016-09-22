@@ -1,5 +1,5 @@
 # MorMap
-An application to help FRC teams find other teams near them. Try it out [here](http://thevoidpigeon.heliohost.org/mormap/).
+An application to help FRC teams find other teams near them. Try it out [here](http://mortorqrobotics.github.io/mormap-data).
 
 ## Usage
 

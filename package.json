@@ -1,0 +1,17 @@
+{
+  "name": "mormap",
+  "version": "1.0.0",
+  "description": "Generates the data behind MorMap",
+  "main": "generate.js",
+  "scripts": {
+    "start": "node generate.js",
+    "postinstall": "mkdir -p cache/google; mkdir -p cache/tba; [ -f config.json ] || echo '{\n  \"googlePlacesApiWebServiceKey\": \"\"\n}' > config.json"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "fs.promised": "^3.0.0",
+    "request": "^2.75.0",
+    "request-promise": "^4.1.1"
+  }
+}

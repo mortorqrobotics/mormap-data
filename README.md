@@ -1,10 +1,21 @@
 # MorMap
-An application to help FRC teams find other teams near them. Try it out [here](http://mortorqrobotics.github.io/mormap-data).
-
-## Usage
-
-MorMap uses node.js to compile a list of team locations with the help of [The Blue Alliance](http://thebluealliance.com/) and Google Maps. To do this, run `node getTeams.js` to compile a list of teams participating in any regional in 2016 with a location provided by The Blue Alliance. Then, run `node getLocations.js` to start compiling longitude and latitude for each team. This will take a long time, and if the process crashes due to something like an internet disconnection, restart it and it will pick up where it left off. In order to regenerate the team location database after already having it generated, delete the `locations.js` file. This repository includes a pregenerated copy of the database. After all team locations have been retrieved, run `node finalize.js` to finalize the database. The map of teams can then be viewed by opening `index.html` in a web browser. The html file only relies on `locations.js` to work correctly.
+An application to help FRC teams find other teams near them. Try the demo [here](http://mortorqrobotics.github.io/mormap-data).
 
 ## Accuracy
 
-MorMap is not completely accurate, as it relies on the school name from The Blue Alliance to find the exact location of a team. The location of some teams is accurate only to the city, and other teams that are participating in a regional in 2016 are not included since the search on Google Maps yielded no results. There are plans to add manual corrections to the database for the ~190 teams not included in MorMap.
+MorMap currently only includes teams that participated in at least one competition in 2016. It will be updated for 2017 soon.
+
+MorMap uses the team location and school name provided by The Blue Alliance to obtain precise locations so that teams that are close to each other can accurately judge distance and collaborate more easily. It falls back to just using the city if the school name is not found by Google.
+
+## Usage
+
+To generate the data, MorMap requires node and npm. Start by running `npm install` to install dependencies and set up files.
+
+MorMap uses [The Blue Alliance](http://thebluealliance.com/) and the [Google Places API Web Service](https://developers.google.com/places/web-service/). In order to generate the data, enter the Google API key in `config.json`.
+
+Then, run `npm start` to begin generating data.
+
+Depending on your Google API key rate limits, it might take multiple days to complete the data collection. If you hit the limit, the script will terminate and you can restart it later. The script can be stopped at any time and it will pick up where it left off, as all requests are saved locally after they are made once.
+
+The resulting `locations.js` can be used as JSONP for websites or as a module for NodeJS/browserify/etc.
+

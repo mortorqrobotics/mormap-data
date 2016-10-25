@@ -67,13 +67,16 @@
 				});
 			});
 
-			for(var team in data) (function() {
+			for(var team in teamLocations) (function() {
 				var teamNum = team;
 
 				// yes, these are switched
 				// yes, it will be fixed eventually
 				var marker = new google.maps.Marker({
-					position: new google.maps.LatLng(data[team].longitude, data[team].latitude),
+					position: new google.maps.LatLng(
+						teamLocations[team].lat,
+						teamLocations[team].lng
+					),
 					map: map
 				});
 

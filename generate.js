@@ -7,6 +7,7 @@ const coroutine = Promise.coroutine;
 
 const config = require("./config.json");
 const outputFile = "locations.js";
+const year = 2016;
 
 const delay = (millis) => new Promise(resolve => setTimeout(resolve, millis));
 const getPath = (path) => require("path").join(__dirname, path);
@@ -56,7 +57,7 @@ const searchTba = coroutine(function*(path) {
 });
 
 coroutine(function*() {
-    let events = yield searchTba("/events/2016");
+    let events = yield searchTba("/events/" + year);
     let allTeams = {};
     let teamss = yield Promise.all(events.map(event => (
         searchTba("/event/" + event.key + "/teams")
@@ -123,7 +124,7 @@ coroutine(function*() {
     let begin = "(function() {\nvar locations = ";
     let end = ";"
         + "\nif (typeof module === 'undefined') { window.teamLocations = locations; }"
-        + "\nelse { module.exports = teamLocations; }"
+        + "\nelse { module.exports = locations; }"
         + "\n})();";
     yield fs.writeFile(getPath(outputFile),
         begin + JSON.stringify(locationsObj) + end

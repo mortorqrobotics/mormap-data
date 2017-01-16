@@ -17,5 +17,5 @@ Then, run `npm start` to begin generating data.
 
 Depending on your Google API key rate limits, it might take multiple days to complete the data collection. If you hit the limit, the script will terminate and you can restart it later. The script can be stopped at any time and it will pick up where it left off, as all requests are saved locally after they are made once.
 
-The resulting `locations.js` can be used as JSONP for websites or as a module for NodeJS/browserify/etc.
+The resulting `locations.js` can be used as JSONP for websites or as a module for NodeJS/browserify/etc. `locations.json` can be used as raw JSON.
 

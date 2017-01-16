@@ -6,7 +6,8 @@ const fs = require("fs.promised/promisify")(Promise);
 const coroutine = Promise.coroutine;
 
 const config = require("./config.json");
-const outputFile = "locations.js";
+const outputFileJsonp = "locations.js";
+const outputFileJson = "locations.json";
 const year = 2016;
 
 const delay = (millis) => new Promise(resolve => setTimeout(resolve, millis));
@@ -126,8 +127,9 @@ coroutine(function*() {
         + "\nif (typeof module === 'undefined') { window.teamLocations = locations; }"
         + "\nelse { module.exports = locations; }"
         + "\n})();";
-    yield fs.writeFile(getPath(outputFile),
+    yield fs.writeFile(getPath(outputFileJsonp),
         begin + JSON.stringify(locationsObj) + end
     );
+    yield fs.writeFile(getPath(outputFileJson), JSON.stringify(locationsObj));
     console.log("\rdone         ");
 })();

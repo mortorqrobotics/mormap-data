@@ -8,7 +8,7 @@ const coroutine = Promise.coroutine;
 const config = require("./config.json");
 const outputFileJsonp = "locations.js";
 const outputFileJson = "locations.json";
-const year = 2016;
+const year = 2018;
 
 const delay = (millis) => new Promise(resolve => setTimeout(resolve, millis));
 const getPath = (path) => require("path").join(__dirname, path);

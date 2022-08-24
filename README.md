@@ -3,7 +3,7 @@ An application to help FRC teams find other teams near them. Try the demo [here]
 
 ## Accuracy
 
-MorMap currently only includes teams that participated in at least one competition in 2016. It will be updated for 2017 soon.
+MorMap currently only includes teams that participated in at least one competition in 2022.
 
 MorMap uses the team location and school name provided by The Blue Alliance to obtain precise locations so that teams that are close to each other can accurately judge distance and collaborate more easily. It falls back to just using the city if the school name is not found by Google.
 
